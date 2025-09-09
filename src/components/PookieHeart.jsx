@@ -76,7 +76,7 @@ const isInsideHeart = (x, y, centerX, centerY, size) => {
     const dots = [];
 
     const gridSize = 12;
-    const dotSize = 4;
+    const dotSize = 3;
     const containerWidth = container.clientWidth;
     const containerHeight = container.clientHeight;
     const centerX = containerWidth / 2;
@@ -144,7 +144,7 @@ const isInsideHeart = (x, y, centerX, centerY, size) => {
           gsap.to(dot.element, {
             x: offsetX,
             y: offsetY,
-            scale: 1 + influence * 0.5,
+            scale: 2 + influence * 0.5,
             duration: 0.3,
             ease: "power2.out",
           });
