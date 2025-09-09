@@ -252,10 +252,6 @@ const isInsideHeart = (x, y, centerX, centerY, size) => {
   <div
     ref={containerRef}
     className="flex w-full h-screen overflow-hidden cursor-crosshair justify-center"
-    style={{
-      backgroundColor: "#212121",
-      background: "linear-gradient(135deg, #212121 0%, #2a2a2a 100%)",
-    }}
   >
     <div className="text-center z-10 pointer-events-none">
       <h1 className="text-4xl font-bold my-8 text-white">
