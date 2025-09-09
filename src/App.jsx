@@ -1,10 +1,10 @@
 import React from 'react'
-import InteractiveHeart from './components/interactiveHeart'
+import PookieHeart from './components/PookieHeart'
 
 const App = () => {
   return (
     <div className='min-h-screen'>
-      <InteractiveHeart/>
+      <PookieHeart/>
     </div>
   )
 }

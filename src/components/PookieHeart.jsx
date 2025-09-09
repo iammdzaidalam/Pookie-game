@@ -4,10 +4,9 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { InertiaPlugin } from "gsap/InertiaPlugin";
 
-// Register GSAP plugins
 gsap.registerPlugin(InertiaPlugin);
 
-export default function InteractiveHeart() {
+export default function PookieHeart() {
   const containerRef = useRef(null);
   const dotsRef = useRef([]);
   const mouseRef = useRef({ x: 0, y: 0 });
@@ -55,13 +54,11 @@ export default function InteractiveHeart() {
 
 
 const isInsideHeart = (x, y, centerX, centerY, size) => {
-  // Normalize coordinates to [-1, 1] range
+
   const normalizedX = (x - centerX) / size;
   const normalizedY = (y - centerY) / size;
-
-  // Flip Y axis (since DOM Y grows downward)
   const heartX = normalizedX;
-  const heartY = -normalizedY + 0.3; // vertical adjustment
+  const heartY = -normalizedY + 0.3; 
 
   // Standard heart equation: (x² + y² - 1)³ - x²y³ ≤ 0
   const equation =
